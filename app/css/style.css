@@ -1,0 +1,322 @@
+html {
+   box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+/* Общие параметры */
+
+a {
+   color: #b9b9b9;
+   display: inline-block;
+   text-decoration: none;
+}
+a:hover {
+   color: #e8663c;
+}
+
+ul {
+   list-style: none;
+}
+li {
+   display: inline-block;
+}
+ body {
+    background-image: url(../images/bg.jpg);
+ }
+
+.container {
+   max-width: 960px;
+   padding: 0px 10px;
+   margin: 0 auto;
+}
+/* Шапка */
+
+.header__inner {
+   font-family: 'Bebas Neue', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 78px;
+}
+.header__logo span {
+   color: #e8603c;
+}
+.header__menu li+li {
+   margin-left: 26px;
+}
+a.activ {
+   color: #e7957a;
+}
+
+/* Слайдер большой */
+
+.slider__top {
+   margin-bottom: 18px;
+}
+.slider__item {
+   min-height: 405px;
+   background-color: #e8663c;
+   background-position: top center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+}
+
+/* Окно с текстом внутри большого слайдера */
+
+.slider__notific {
+   position: absolute;
+   max-width: 400px;
+   min-height: 120px;
+   background-color: rgba(232, 102, 60, .8);
+   left: 36px;
+   bottom: 32px;
+   padding: 20px 18px;
+}
+.slider__notific-title {
+   font-family: 'Bebas Neue', sans-serif;
+   font-weight: 400;
+   font-size: 18px;
+   padding-bottom: 10px;
+   color: #fff;
+}
+.slider__notific-text {
+   font-size: 14px;
+   line-height: 18px;
+   color: #fff;
+}
+
+/* Уши персиковые SLIDER */
+
+.slider {
+   overflow: hidden;
+}
+.slider__inner {
+   position: relative;
+}
+.slider__inner::before,
+.slider__inner::after {
+   content:'';
+   position: absolute;
+   height: 62px;
+   width: 100%;
+   background-color: #f3af9d;
+   top: 0;
+}
+.slider__inner::before {
+   left: 10px;
+   margin-left: 100%;
+}
+.slider__inner::after {
+   right: 10px;
+   margin-right: 100%;
+}
+
+/* Нижний слайдер */
+
+.slider__bot-img {
+   background-color: #e8663c;
+   width: 140px;
+   height: 120px;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.slider__bot .slick-slide {
+   max-width: 140px;
+}
+.slider__bot .slick-track div + div {
+   margin-left: 20px;
+}
+
+/* section MORE */
+
+.more__inner {
+   padding-top: 40px;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 45px;
+}
+.more__item {
+   max-width: 280px;
+}
+.more__title {
+   max-width: 240px;
+   font-family: 'Bebas Neue', sans-serif;
+   font-size: 18px;
+   line-height: 24px;
+   font-weight: 400;
+   color: #e8663c;
+   padding-bottom: 30px;
+   padding-left: 70px;
+   position: relative;
+   min-height: 80px;
+}
+.more__icon-chek::before {
+   content:'';
+   position: absolute;
+   background-image: url(../images/chek.svg);
+   width: 46px;
+   height: 46px;
+   left: 0;
+}
+.more__icon-offer::before {
+   content:'';
+   position: absolute;
+   background-image: url(../images/offer.svg);
+   width: 50px;
+   height: 43px;
+   left: 0;
+}
+.more__icon-follow::before {
+   content:'';
+    position: absolute;
+    background-image: url(../images/follow.svg);
+   width: 43px;
+   height: 40px;
+   top: 0;
+   left: 0;
+}
+.more__text {
+   font-size: 12px;
+   line-height: 18px;
+   color: #585858; 
+   margin-bottom: 20px;
+}
+.more__link a{
+   font-family: 'Bebas Neue', sans-serif;
+   font-size: 14px;
+   line-height: 24px;
+   text-transform: uppercase;
+   color: #fff;
+   background-color: #e8663c;
+   padding: 5px 15px;
+}
+
+/* section WORKS */
+
+.works__inner {
+   font-family: 'Bebas Neue', sans-serif;
+   font-weight: 400;
+   line-height: 18px;
+   color: #e8663c;
+   margin-bottom: 50px;
+}
+.works__title {
+   font-size: 18px;
+   margin-bottom: 25px;
+   background-image: url(../images/zalivka.jpg);
+}
+.works__title span {
+   background-color: #fff;
+   padding-right: 20px;
+   display: inline-block;
+}
+.works__items {
+   display: flex;
+   justify-content: space-between;
+}
+.works__item-img {
+   width: 220px;
+   height: 185px;
+   display: block;  /* Убирает отступ между картинкой и надписью внизу */
+}
+.works__item-wrapper {
+   width: 220px;
+   height: 62px;
+   background-color: #fff;
+   border-bottom: 1px solid #dbdbdb;
+   border-left: 1px solid #dbdbdb;
+   border-right: 1px solid #dbdbdb;
+   padding-left: 12px;
+   padding-top: 13px;
+}
+.works__item-name {
+   font-size: 16px;
+   color: #b9b9b9;
+   margin-bottom: 4px;
+}
+.works__item-date {
+   font-size: 12px;
+}
+
+/* footer FOOTER */
+
+.footer__inner {
+   font-size: 12px;
+   line-height: 14px;
+   background-color: #e8663c;
+   color: #fff;
+   display: flex;
+   justify-content: space-between;
+   padding: 35px 35px 0;
+}
+.footer__about {
+   max-width: 262px;
+}
+.footer__title {
+   font-family: 'Bebas Neue', sans-serif;
+   font-size: 20px;
+}
+p span {
+   line-height: 24px;
+   color: #b9b9b9;
+}
+.footer__a:hover {
+   color: #fff;
+}
+.footer__twitter {
+   max-width: 220px;
+}
+.footer__contact {
+   max-width: 255px;
+}
+.footer__email,
+.footer__phone {
+   color: #fff;
+}
+.footer__email:hover,
+.footer__phone:hover {
+   color: #551804;
+}
+.footer__social img {
+   width: 30px;
+   height: 30px;
+   margin-right: 5px;
+}
+.footer__social {
+   padding-left: 0;
+}
+
+/* Уши персиковые FOOTER */
+
+.footer {
+   overflow: hidden;
+}
+.footer__inner {
+   position: relative;
+}
+.footer__inner::before,
+.footer__inner::after {
+   content:'';
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background-color: #f3af9d;
+   top: 0;
+}
+.footer__inner::before {
+   left: 10px;
+   margin-left: 100%;
+}
+.footer__inner::after {
+   right: 10px;
+   margin-right: 100%;
+}
